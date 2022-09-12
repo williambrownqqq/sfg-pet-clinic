@@ -1,4 +1,4 @@
-package com.zanchenko.alexey.sfgpetclinic.model;
+package com.zanchenko.alexey.sfgclinic.model;
 
 public class Person {
     private  String firstName;

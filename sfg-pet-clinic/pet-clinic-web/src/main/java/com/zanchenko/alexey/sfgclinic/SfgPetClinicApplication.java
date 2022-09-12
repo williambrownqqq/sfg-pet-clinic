@@ -1,4 +1,4 @@
-package com.zanchenko.alexey.sfgpetclinic;
+package com.zanchenko.alexey.sfgclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
