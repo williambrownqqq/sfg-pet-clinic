@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="discomment &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;" />
+    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="Adding BaseEntity. Closes #10.">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/CrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/OwnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/OwnerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/PetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/VetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/VetService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -194,7 +200,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663172911153</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add maven release plugin closes #3">
+      <created>1663173134404</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663173134404</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implement Interfaces for services. Closes #5.">
+      <created>1663195184530</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663195184530</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adding BaseEntity. Closes #10.">
+      <created>1663252251829</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663252251829</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +245,9 @@
     <MESSAGE value="&lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;" />
     <MESSAGE value="comment &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;" />
     <MESSAGE value="discomment &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="discomment &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;" />
+    <MESSAGE value="add maven release plugin closes #3" />
+    <MESSAGE value="Implement Interfaces for services. Closes #5." />
+    <MESSAGE value="Adding BaseEntity. Closes #10." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding BaseEntity. Closes #10." />
   </component>
 </project>
