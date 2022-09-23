@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="Refactoring to common crud interface. Closes #11.">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/AbstractMapService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/OwnerServiceMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/PetServiceMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/VetServiceMap.java" afterDir="false" />
+    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="Impl Map based Services. Closes #6.">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -59,9 +60,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -71,7 +73,11 @@
       <recent name="com.zanchenko.alexey.sfgpetclinic.model" />
       <recent name="com.zanchenko.alexey.sfgpetclinic" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources" />
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-webb\src\main\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -79,7 +85,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SfgPetClinicApplicationTests">
+  <component name="RunManager" selected="Application.SfgPetClinicApplication (1)">
+    <configuration name="SfgPetClinicApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.SfgPetClinicApplication" />
+      <module name="pet-clinic-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SfgPetClinicApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SfgPetClinicApplication" />
       <module name="pet-clinic-data" />
@@ -136,6 +155,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SfgPetClinicApplication (1)" />
         <item itemvalue="JUnit.SfgPetClinicApplicationTests" />
         <item itemvalue="Gradle.C:/Users/lesha/Desktop/дыра/guru/sfg-pet-clinic/sfg-pet-clinic" />
         <item itemvalue="Application.SfgPetClinicApplication" />
@@ -228,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663855441437</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Impl Map based Services. Closes #6.">
+      <created>1663858272397</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663858272397</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +283,7 @@
     <MESSAGE value="Implement Interfaces for services. Closes #5." />
     <MESSAGE value="Adding BaseEntity. Closes #10." />
     <MESSAGE value="Refactoring to common crud interface. Closes #11." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring to common crud interface. Closes #11." />
+    <MESSAGE value="Impl Map based Services. Closes #6." />
+    <option name="LAST_COMMIT_MESSAGE" value="Impl Map based Services. Closes #6." />
   </component>
 </project>
