@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="Impl Map based Services. Closes #6.">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/index.html" afterDir="false" />
+    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="Adding Pet Clinic Index Page and Controller. Closes #8.">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/vets/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -255,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663858272397</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adding Pet Clinic Index Page and Controller. Closes #8.">
+      <created>1663931034664</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663931034664</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,6 +289,7 @@
     <MESSAGE value="Adding BaseEntity. Closes #10." />
     <MESSAGE value="Refactoring to common crud interface. Closes #11." />
     <MESSAGE value="Impl Map based Services. Closes #6." />
-    <option name="LAST_COMMIT_MESSAGE" value="Impl Map based Services. Closes #6." />
+    <MESSAGE value="Adding Pet Clinic Index Page and Controller. Closes #8." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Pet Clinic Index Page and Controller. Closes #8." />
   </component>
 </project>
