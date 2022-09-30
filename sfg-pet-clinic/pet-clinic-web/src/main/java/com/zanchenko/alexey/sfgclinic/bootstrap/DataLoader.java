@@ -20,8 +20,8 @@ public class DataLoader implements CommandLineRunner {
 
     //@Autowired // no linger required
     public DataLoader(OwnerService ownerService, VetService vetService) {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+        this.ownerService =ownerService;
+        this.vetService = vetService;
     }
 
     @Override
