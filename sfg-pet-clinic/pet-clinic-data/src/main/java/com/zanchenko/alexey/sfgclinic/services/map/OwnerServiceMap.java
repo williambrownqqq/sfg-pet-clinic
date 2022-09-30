@@ -3,9 +3,11 @@ package com.zanchenko.alexey.sfgclinic.services.map;
 import com.zanchenko.alexey.sfgclinic.model.Owner;
 import com.zanchenko.alexey.sfgclinic.services.CrudService;
 import com.zanchenko.alexey.sfgclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {

@@ -6,6 +6,7 @@ import com.zanchenko.alexey.sfgclinic.services.OwnerService;
 import com.zanchenko.alexey.sfgclinic.services.VetService;
 import com.zanchenko.alexey.sfgclinic.services.map.OwnerServiceMap;
 import com.zanchenko.alexey.sfgclinic.services.map.VetServiceMap;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,7 +18,7 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-
+    //@Autowired // no linger required
     public DataLoader(OwnerService ownerService, VetService vetService) {
         this.ownerService = new OwnerServiceMap();
         this.vetService = new VetServiceMap();
