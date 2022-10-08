@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="Added Owners List and updated controller. Closes #16.">
+    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="Adding resources. Closes #17.">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/static/resources/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/fragments/inputField.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/fragments/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/vets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/vets/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,6 @@
   </component>
   <component name="ProjectId" id="2Cf7gLXOLYSQxUGGqb8GWqarfUM" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -61,7 +61,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -73,6 +73,7 @@
       <recent name="com.zanchenko.alexey.sfgpetclinic" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources\static\resources" />
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -296,7 +297,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664558982439</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added Vet List and updated controller. Closes #15.">
+      <created>1664564664228</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1664564664228</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactored Map Impl to abstract ID generation. Closes #23.">
+      <created>1664567526720</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1664567526720</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Adding resources. Closes #17.">
+      <created>1665231604843</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1665231604843</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,7 +353,11 @@
     <MESSAGE value="Adding Bootstrap for data. Closes #14." />
     <MESSAGE value="Adding Spring Config. Closes #22." />
     <MESSAGE value="Added Owners List and updated controller. Closes #16." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Owners List and updated controller. Closes #16." />
+    <MESSAGE value="Added Vet List and updated controller. Closes #15." />
+    <MESSAGE value="Refactored Map Impl to abstract ID generation. Closes #23." />
+    <MESSAGE value="Adding static resources. Closes #17." />
+    <MESSAGE value="Adding resources. Closes #17." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding resources. Closes #17." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
