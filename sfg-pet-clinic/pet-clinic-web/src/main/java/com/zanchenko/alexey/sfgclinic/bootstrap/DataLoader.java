@@ -1,31 +1,39 @@
 package com.zanchenko.alexey.sfgclinic.bootstrap;
 
 import com.zanchenko.alexey.sfgclinic.model.Owner;
+import com.zanchenko.alexey.sfgclinic.model.PetType;
 import com.zanchenko.alexey.sfgclinic.model.Vet;
 import com.zanchenko.alexey.sfgclinic.services.OwnerService;
+import com.zanchenko.alexey.sfgclinic.services.PetTypeService;
 import com.zanchenko.alexey.sfgclinic.services.VetService;
-import com.zanchenko.alexey.sfgclinic.services.map.OwnerServiceMap;
-import com.zanchenko.alexey.sfgclinic.services.map.VetServiceMap;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.awt.image.SampleModel;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetTypeService petTypeService;
 
     //@Autowired // no linger required
-    public DataLoader(OwnerService ownerService, VetService vetService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
         this.ownerService =ownerService;
         this.vetService = vetService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
+
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType saveDogType = petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        cat.setName("Cat");
+        PetType saveCatType = petTypeService.save(cat);
+
         Owner owner1 = new Owner();
 
         owner1.setFirstName("Michael");
