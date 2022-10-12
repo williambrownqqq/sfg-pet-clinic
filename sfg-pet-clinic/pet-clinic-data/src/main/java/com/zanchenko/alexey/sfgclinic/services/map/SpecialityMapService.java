@@ -1,11 +1,12 @@
 package com.zanchenko.alexey.sfgclinic.services.map;
 
 import com.zanchenko.alexey.sfgclinic.model.Speciality;
-import com.zanchenko.alexey.sfgclinic.services.SpecialtiesService;
+import com.zanchenko.alexey.sfgclinic.services.SpecialtyService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
-public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialtiesService {
+@Service
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialtyService {
     @Override
     public Set<Speciality> findAll() {
         return super.findAll();

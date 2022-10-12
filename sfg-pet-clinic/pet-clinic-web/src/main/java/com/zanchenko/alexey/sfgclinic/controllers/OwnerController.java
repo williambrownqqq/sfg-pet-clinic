@@ -25,4 +25,11 @@ public class OwnerController {
         // ownerService.findAll() - it is going to give us a set that will be able to iterate over. Сможет повторить
         return "owners/index";
     }
+
+    @RequestMapping({"/find"})
+    public String findOwners(){
+        return "notimplemented";
+    }
+
+
 }

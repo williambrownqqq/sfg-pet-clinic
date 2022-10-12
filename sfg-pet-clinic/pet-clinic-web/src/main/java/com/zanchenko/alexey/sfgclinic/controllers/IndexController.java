@@ -18,4 +18,9 @@ public class IndexController {
     }
     // it returns back index, the string index and what happens with Thymeleaf it is going to back and look for a template called index.
     // This wires up this controller for that. Это подключает этот контроллер для этого.
+
+    @RequestMapping({"/oups"})
+    public String oupsHandler(){
+        return "notimplemented";
+    }
 }
