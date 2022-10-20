@@ -52,3 +52,11 @@ public class BaseEntity implements Serializable {
 //database and determine a strategy to use.
 // AUTO в основном говорит, что мы собираемся выбрать один, и мы позволим Hibernate взглянуть на основной базы данных
 // и определить стратегию для использования.
+
+// We have a @MappedSuperclass. That
+//indicates that this object is not to be created in the database that we
+//are expecting other classes to inherit from it.
+
+// the @column annotation. This sets up the the naming
+//convention for the database column, so this says, this is what we're going to
+//expect the database columns to be.

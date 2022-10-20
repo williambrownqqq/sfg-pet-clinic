@@ -1,11 +1,22 @@
 package com.zanchenko.alexey.sfgclinic.model;
 
+import javax.persistence.*;
 import java.time.LocalDate;
-
+@Entity
+@Table(name = "pets")
 public class Pet extends BaseEntity{
+    @Column(name = "name")
     private String name;
-    private PetType petType;
-    private Owner owner;
+
+    @ManyToOne
+    @JoinColumn(name = "type_id")
+    private PetType petType; // We also had to set up PetType so let's come over here to PetType.
+
+    @ManyToOne
+    @JoinColumn(name = "owner_id") // so every pet is going to have an owner and we're going to map by owner ID.
+    private Owner owner; // this relates back to Owner mapping (set)
+
+    @Column(name = "birth_date")
     private LocalDate birthDate;
 
     public String getName() {
