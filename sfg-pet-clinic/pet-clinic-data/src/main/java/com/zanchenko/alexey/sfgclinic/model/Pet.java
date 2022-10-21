@@ -2,6 +2,9 @@ package com.zanchenko.alexey.sfgclinic.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
+
 // Pet, this is going to be another one of our entities.
 @Entity
 @Table(name = "pets")
@@ -19,6 +22,20 @@ public class Pet extends BaseEntity{
 
     @Column(name = "birth_date")
     private LocalDate birthDate;
+    // Of course a pet can go visit the vet multiple times, so each visit will become
+    //an individual attribute of a pet.
+    // Cascade type of all means that if we delete a
+    //pet, the associated visit records for that pet will also get deleted by JPA.
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
+    private Set<Visit> visits = new HashSet<>();
+
+    public Set<Visit> getVisits() {
+        return visits;
+    }
+
+    public void setVisits(Set<Visit> visits) {
+        this.visits = visits;
+    }
 
     public String getName() {
         return name;
