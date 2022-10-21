@@ -3,7 +3,8 @@ package com.zanchenko.alexey.sfgclinic.model;
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
-@Entity
+
+@Entity // has been mapped as a JPA entity
 @Table(name = "owners") // it's going to be a JPA entity mapped to the table of owners. // это будет JPA объект сопоставлен с таблицей владельцев.
 public class Owner extends Person{
     // We set up column mappings. Настраиваем сопоставления столбцов.

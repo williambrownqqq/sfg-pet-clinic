@@ -2,6 +2,7 @@ package com.zanchenko.alexey.sfgclinic.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+// Pet, this is going to be another one of our entities.
 @Entity
 @Table(name = "pets")
 public class Pet extends BaseEntity{

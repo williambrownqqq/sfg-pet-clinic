@@ -5,6 +5,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
+
+//Base Entity that things inherit from
+
 @MappedSuperclass // this established this ass a base class to JPA. // What we are
 //doing is saying, "Hey JPA, we're going to inherit from this class or other classes
 //        are going to be inheriting it. We don't need this specific class mapped to the

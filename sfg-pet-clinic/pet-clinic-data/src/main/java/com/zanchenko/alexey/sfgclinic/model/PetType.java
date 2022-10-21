@@ -3,7 +3,7 @@ package com.zanchenko.alexey.sfgclinic.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-
+// PetType is oe of these root entities inherits from baseEntity
 @Entity
 @Table(name = "types")
 public class PetType extends BaseEntity{
