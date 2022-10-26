@@ -5,9 +5,11 @@ import com.zanchenko.alexey.sfgclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import javax.transaction.Transactional;
 import java.time.LocalDate;
 
 @Component
+@Transactional
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
@@ -87,7 +89,6 @@ public class DataLoader implements CommandLineRunner {
         alexPet.setBirthDate(LocalDate.now());
         alexPet.setName("hello kitty");
         owner1.getPets().add(alexPet);
-
         ownerService.save(owner1);
         ownerService.save(owner2);
 
@@ -97,9 +98,6 @@ public class DataLoader implements CommandLineRunner {
         catVisit.setDescription("Sneezy Kitty");
 
         visitService.save(catVisit);
-
-
-
 
         System.out.println("Loaded Owners...");
 
