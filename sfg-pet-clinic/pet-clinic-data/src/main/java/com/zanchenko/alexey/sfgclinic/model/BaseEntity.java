@@ -1,5 +1,10 @@
 package com.zanchenko.alexey.sfgclinic.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -7,7 +12,10 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 //Base Entity that things inherit from
-
+@Getter // we can get rid of getters in class
+@Setter // we can get rid of setters in class
+@NoArgsConstructor
+@AllArgsConstructor
 @MappedSuperclass // this established this ass a base class to JPA. // What we are
 //doing is saying, "Hey JPA, we're going to inherit from this class or other classes
 //        are going to be inheriting it. We don't need this specific class mapped to the
@@ -18,14 +26,6 @@ public class BaseEntity implements Serializable {
     //going to insert it in the database is going to provide us the identity value.
     // Теперь ИДЕНТИЧНОСТЬ, которую мы выбрали, говорит, что мы собирается вставить его в базу данных, чтобы предоставить нам значение идентификатора.
     private Long id;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 }
 
 

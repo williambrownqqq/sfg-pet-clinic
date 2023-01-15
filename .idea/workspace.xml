@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="Copied templates from Spring Pet Clinic. Closes #18.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_139.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bootstrap_3_3_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_ui_1_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_webjars_locator_core_0_50.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/less/header.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/less/petclinic.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/less/responsive.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/less/typography.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/wro/wro.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/wro/wro.xml" afterDir="false" />
+    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="updated profiles for JPA service, tested active profiles, closes #48">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Owner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/PetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/PetType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Speciality.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Speciality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Vet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Vet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Visit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/bootstrap/DataLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,20 +47,42 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/springdatajpa/VetSDJpaService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/VisitMapService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/PetTypeMapService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Visit.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/repositories/PetTypRepository.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/VetMapService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VetController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/IndexController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Owner.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/OwnerService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/springdatajpa/OwnerSDJpaService.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
   <component name="ProjectId" id="2Cf7gLXOLYSQxUGGqb8GWqarfUM" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -71,11 +91,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jpa-buddy-2022.4.1-222.zip" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -83,10 +103,10 @@
       <recent name="com.zanchenko.alexey.sfgpetclinic" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources" />
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main" />
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources\templates" />
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources\static\resources" />
-      <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources" />
@@ -337,7 +357,189 @@
       <option name="project" value="LOCAL" />
       <updated>1665231690464</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added wro4j plugin and config from Spring Pet Clinic. Closes #24.&#10;what we are doing is we're actually using this WRO4J plugin, which is going to be&#10;generating resources from less files and combining those so it's also saying that&#10;hey I need this web jar called bootstrap involved.">
+      <created>1665429250681</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1665429250681</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add layout to index page, closes #19">
+      <created>1665437004447</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1665437004447</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fixed i18n, closes #25">
+      <created>1665438040653</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1665438040653</updated>
+    </task>
+    <task id="LOCAL-00026" summary="added layout, closes #20">
+      <created>1665438634969</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1665438634969</updated>
+    </task>
+    <task id="LOCAL-00027" summary="added layout to vets page, closes #21">
+      <created>1665481885147</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1665481885147</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added visits,updated owner with pet relationship , closes #26">
+      <created>1665483530550</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1665483530550</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added specialities, added to vet, closes #27">
+      <created>1665483937686</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1665483937686</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added properties, closes #28">
+      <created>1665484271512</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1665484271512</updated>
+    </task>
+    <task id="LOCAL-00031" summary="added PetTypeService, closes #29">
+      <created>1665485167869</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1665485167869</updated>
+    </task>
+    <task id="LOCAL-00032" summary="added PetTypes to bootstrap(DataLoader class), closes #32">
+      <created>1665490668939</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1665490668939</updated>
+    </task>
+    <task id="LOCAL-00033" summary="added Pets and Contact info to owners on startup, closes #33">
+      <created>1665493086049</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1665493086049</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added Specialties Map Impl, closes #31">
+      <created>1665494220893</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1665494220893</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Fixed Broken Links, closes #45">
+      <created>1665574244084</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1665574244084</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Udated base entity with JPA annotations, we add @MappedSuperclass to BaseEntity, closes #35&#10;If we run Spring Boot, I expect&#10;to a toss an exception. We do need to complete the mapping for the other&#10;classes in our model. In the JPA, we have a number of annotations to do.">
+      <created>1666290231498</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1666290231498</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Updated owner woth JPA entity mappings. We mapped out the JPA entities: Pet, Owner, PetType, closes #36">
+      <created>1666294270035</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1666294270035</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Updated vet to use JPA, closes #37">
+      <created>1666345455571</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1666345455571</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Added Visit Entity, closes #38">
+      <created>1666346775647</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1666346775647</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Implemented repositories, closes #39">
+      <created>1666350643858</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1666350643858</updated>
+    </task>
+    <task id="LOCAL-00041" summary="added spring data jpa service for owners, closes #40">
+      <created>1666358478165</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1666358478165</updated>
+    </task>
+    <task id="LOCAL-00042" summary="added spring data jpa service for vets, closes #41">
+      <created>1666359779852</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1666359779852</updated>
+    </task>
+    <task id="LOCAL-00043" summary="added petType SD JPA Service, closes #42">
+      <created>1666360525560</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1666360525560</updated>
+    </task>
+    <task id="LOCAL-00044" summary="added Pet SD JPA Service, closes #33">
+      <created>1666706589610</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1666706589610</updated>
+    </task>
+    <task id="LOCAL-00045" summary="added Speciality SD JPA Service, closes #44">
+      <created>1666707798760</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1666707798760</updated>
+    </task>
+    <task id="LOCAL-00046" summary="IMplemented Map impl for Visit Service, closes #46">
+      <created>1666780025991</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1666780025991</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Implemented JPA Visit Service, added loader data, closes #46">
+      <created>1666781983682</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1666781983682</updated>
+    </task>
+    <task id="LOCAL-00048" summary="updated profiles for JPA service, tested active profiles, closes #48">
+      <created>1666785738438</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1666785738438</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,30 +556,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding POJOs. Closes #2." />
-    <MESSAGE value="refactoring to multimodule maven project. closes #1" />
-    <MESSAGE value="some changes for mvn release:prepare" />
-    <MESSAGE value="change package name for test in pet-clinic-web" />
-    <MESSAGE value="&lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;" />
-    <MESSAGE value="comment &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;" />
-    <MESSAGE value="discomment &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;" />
-    <MESSAGE value="add maven release plugin closes #3" />
-    <MESSAGE value="Implement Interfaces for services. Closes #5." />
-    <MESSAGE value="Adding BaseEntity. Closes #10." />
-    <MESSAGE value="Refactoring to common crud interface. Closes #11." />
-    <MESSAGE value="Impl Map based Services. Closes #6." />
-    <MESSAGE value="Adding Pet Clinic Index Page and Controller. Closes #8." />
-    <MESSAGE value="Adding Vets Page and Controller. Closes #7." />
-    <MESSAGE value="Adding Owners Page and Controller. Closes #13." />
-    <MESSAGE value="Adding Bootstrap for data. Closes #14." />
-    <MESSAGE value="Adding Spring Config. Closes #22." />
-    <MESSAGE value="Added Owners List and updated controller. Closes #16." />
-    <MESSAGE value="Added Vet List and updated controller. Closes #15." />
-    <MESSAGE value="Refactored Map Impl to abstract ID generation. Closes #23." />
-    <MESSAGE value="Adding static resources. Closes #17." />
-    <MESSAGE value="Adding resources. Closes #17." />
-    <MESSAGE value="Copied templates from Spring Pet Clinic. Closes #18." />
-    <option name="LAST_COMMIT_MESSAGE" value="Copied templates from Spring Pet Clinic. Closes #18." />
+    <MESSAGE value="Fixed i18n, closes #25" />
+    <MESSAGE value="added layout, closes #20" />
+    <MESSAGE value="added layout to vets page, closes #21" />
+    <MESSAGE value="added visits,updated owner with pet relationship , closes #26" />
+    <MESSAGE value="added specialities, added to vet, closes #27" />
+    <MESSAGE value="added properties, closes #28" />
+    <MESSAGE value="added PetTypeService, closes #29" />
+    <MESSAGE value="added PetTypes to bootstrap(DataLoader class), closes #32" />
+    <MESSAGE value="added Pets and Contact info to owners on startup, closes #33" />
+    <MESSAGE value="Added Specialties Map Impl, closes #31" />
+    <MESSAGE value="Adding Specialties to vets on startup, closes #34" />
+    <MESSAGE value="Fixed Broken Links, closes #45" />
+    <MESSAGE value="Udated base entity with JPA annotations, we add @MappedSuperclass to BaseEntity, closes #35&#10;If we run Spring Boot, I expect&#10;to a toss an exception. We do need to complete the mapping for the other&#10;classes in our model. In the JPA, we have a number of annotations to do." />
+    <MESSAGE value="Updated owner woth JPA entity mappings. We mapped out the JPA entities: Pet, Owner, PetType, closes #36" />
+    <MESSAGE value="Updated vet to use JPA, closes #37" />
+    <MESSAGE value="Added Visit Entity, closes #38" />
+    <MESSAGE value="Implemented repositories, closes #39" />
+    <MESSAGE value="added spring data jpa service for owners, closes #40" />
+    <MESSAGE value="added spring data jpa service for vets, closes #41" />
+    <MESSAGE value="added petType SD JPA Service, closes #42" />
+    <MESSAGE value="added Pet SD JPA Service, closes #33" />
+    <MESSAGE value="added Speciality SD JPA Service, closes #44" />
+    <MESSAGE value="IMplemented Map impl for Visit Service, closes #46" />
+    <MESSAGE value="Implemented JPA Visit Service, added loader data, closes #46" />
+    <MESSAGE value="updated profiles for JPA service, tested active profiles, closes #48" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated profiles for JPA service, tested active profiles, closes #48" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
