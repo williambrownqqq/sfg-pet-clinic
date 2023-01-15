@@ -1,8 +1,15 @@
 package com.zanchenko.alexey.sfgclinic.model;
 
+import lombok.*;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "vets")
 public class Vet extends Person{
@@ -35,13 +42,6 @@ public class Vet extends Person{
     // Присоединиться стол - это специальный стол, за которым собираются сидеть между так сущности будут
     // иметь свои собственные отношения, но базовая база данных будет иметь таблицу, которая будет определять
     // идентификаторы из обе стороны их отношений.
-    public Set<Speciality> getSpecialities() {
-        return specialities;
-    }
-
-    public void setSpecialities(Set<Speciality> specialities) {
-        this.specialities = specialities;
-    }
 }
 
 

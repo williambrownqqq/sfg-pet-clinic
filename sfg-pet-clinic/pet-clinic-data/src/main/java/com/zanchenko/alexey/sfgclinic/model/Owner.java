@@ -1,12 +1,34 @@
 package com.zanchenko.alexey.sfgclinic.model;
 
+import lombok.*;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Setter
+@Getter
+@NoArgsConstructor
 @Entity // has been mapped as a JPA entity
 @Table(name = "owners") // it's going to be a JPA entity mapped to the table of owners. // это будет JPA объект сопоставлен с таблицей владельцев.
 public class Owner extends Person{
+    // So just to recap there, going back to the Owner(типо на страничку вернулись) because I have
+    //an Owner that extends out a Person, which extends out the BaseEntity, I had to set
+    //up chain of constructors on that, and then, I have all the properties including
+    //the inherited class so id comes from the BaseEntity. firstName, last name comes
+    // from the Person, Person object. So now, Person has a constructor that
+    //takes an id, firstName and the Person calls the constructor of the base entity
+    //and passing an id.
+    @Builder
+    public Owner(Long id, String firstName, String lastName, String address, String city, String telephone,
+                 Set<Pet> pets) {
+        super(id, firstName, lastName);
+        this.address = address;
+        this.city = city;
+        this.telephone = telephone;
+        this.pets = pets;
+    }
+
     // We set up column mappings. Настраиваем сопоставления столбцов.
     @Column(name = "address")
     private String address;
@@ -25,35 +47,4 @@ public class Owner extends Person{
     //So if I have pets and I delete the owner of the pet, the pets will also get
     //deleted, so that's what we want to be setting up here.
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getTelephone() {
-        return telephone;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
-    public Set<Pet> getPets() {
-        return pets;
-    }
-
-    public void setPets(Set<Pet> pets) {
-        this.pets = pets;
-    }
 }
