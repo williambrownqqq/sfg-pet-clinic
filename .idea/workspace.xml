@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="updated profiles for JPA service, tested active profiles, closes #48">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/test/java/com/zanchenko/alexey/sfgclinic/services/map/OwnerMapServiceTest.java" afterDir="false" />
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="Created CRUD tests for OwnerMapService, closes #49">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/test/java/com/zanchenko/alexey/sfgclinic/services/springdatajpa/OwnerSDJpaServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/OwnerMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/OwnerMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,10 +109,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
       <recent name="com.zanchenko.alexey.sfgclinic.services.map" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OwnerMapServiceTest">
+  <component name="RunManager" selected="JUnit.OwnerSDJpaServiceTest">
     <configuration name="SfgPetClinicApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.SfgPetClinicApplication" />
       <module name="pet-clinic-web" />
@@ -126,80 +127,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerMapServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OwnerSDJpaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-data" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.OwnerMapServiceTest" />
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.OwnerSDJpaServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerMapServiceTest.findByLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OwnerSDJpaServiceTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-data" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.OwnerMapServiceTest" />
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.OwnerSDJpaServiceTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerSDJpaServiceTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.OwnerSDJpaServiceTest" />
+      <option name="METHOD_NAME" value="findById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerSDJpaServiceTest.findByIdNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.OwnerSDJpaServiceTest" />
+      <option name="METHOD_NAME" value="findByIdNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerSDJpaServiceTest.findByLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.OwnerSDJpaServiceTest" />
       <option name="METHOD_NAME" value="findByLastName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OwnerMapServiceTest.findByLastNameNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.OwnerMapServiceTest" />
-      <option name="METHOD_NAME" value="findByLastNameNotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OwnerMapServiceTest.saveExisintId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.OwnerMapServiceTest" />
-      <option name="METHOD_NAME" value="saveExisintId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OwnerMapServiceTest.saveNoId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.OwnerMapServiceTest" />
-      <option name="METHOD_NAME" value="saveNoId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -207,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OwnerMapServiceTest" />
-        <item itemvalue="JUnit.OwnerMapServiceTest.findByLastNameNotFound" />
-        <item itemvalue="JUnit.OwnerMapServiceTest.findByLastName" />
-        <item itemvalue="JUnit.OwnerMapServiceTest.saveExisintId" />
-        <item itemvalue="JUnit.OwnerMapServiceTest.saveNoId" />
+        <item itemvalue="JUnit.OwnerSDJpaServiceTest" />
+        <item itemvalue="JUnit.OwnerSDJpaServiceTest.findByIdNotFound" />
+        <item itemvalue="JUnit.OwnerSDJpaServiceTest.findById" />
+        <item itemvalue="JUnit.OwnerSDJpaServiceTest.findAll" />
+        <item itemvalue="JUnit.OwnerSDJpaServiceTest.findByLastName" />
       </list>
     </recent_temporary>
   </component>
@@ -560,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666785738438</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Created CRUD tests for OwnerMapService, closes #49">
+      <created>1674147570322</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1674147570322</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed i18n, closes #25" />
     <MESSAGE value="added layout, closes #20" />
     <MESSAGE value="added layout to vets page, closes #21" />
     <MESSAGE value="added visits,updated owner with pet relationship , closes #26" />
@@ -601,7 +608,8 @@
     <MESSAGE value="IMplemented Map impl for Visit Service, closes #46" />
     <MESSAGE value="Implemented JPA Visit Service, added loader data, closes #46" />
     <MESSAGE value="updated profiles for JPA service, tested active profiles, closes #48" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated profiles for JPA service, tested active profiles, closes #48" />
+    <MESSAGE value="Created CRUD tests for OwnerMapService, closes #49" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created CRUD tests for OwnerMapService, closes #49" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
