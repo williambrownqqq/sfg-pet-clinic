@@ -2,7 +2,7 @@ package com.zanchenko.alexey.sfgclinic.services.map;
 
 import com.zanchenko.alexey.sfgclinic.model.Owner;
 import com.zanchenko.alexey.sfgclinic.model.Pet;
-import com.zanchenko.alexey.sfgclinic.services.CrudService;
+import com.zanchenko.alexey.sfgclinic.repositories.OwnerRepository;
 import com.zanchenko.alexey.sfgclinic.services.OwnerService;
 import com.zanchenko.alexey.sfgclinic.services.PetService;
 import com.zanchenko.alexey.sfgclinic.services.PetTypeService;
@@ -17,10 +17,12 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
 
     private final PetTypeService petTypeService;
     private final PetService petService;
+    //private final OwnerRepository ownerRepository;
 
     public OwnerMapService(PetTypeService petTypeService, PetService petService) {
         this.petTypeService = petTypeService;
         this.petService = petService;
+        //this.ownerRepository = ownerRepository;
     }
 
     @Override
@@ -71,6 +73,10 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
 
     @Override
     public Owner findByLastName(String lastName) {
-        return null;
+        return this.findAll()
+                .stream()
+                .filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
+                .findFirst()
+                .orElse(null);
     }
 }

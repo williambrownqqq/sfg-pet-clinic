@@ -4,20 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="updated profiles for JPA service, tested active profiles, closes #48">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="updated profiles for JPA service, tested active profiles, closes #48">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/test/java/com/zanchenko/alexey/sfgclinic/services/map/OwnerMapServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/SfgPetClinicApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/SfgPetClinicApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/OwnerMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/services/map/OwnerMapService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/sfg-pet-clinic">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,6 +30,7 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -75,7 +81,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
   }
 }]]></component>
   <component name="RecentsManager">
@@ -93,32 +101,18 @@
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources" />
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-webb\src\main\java" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.zanchenko.alexey.sfgclinic" />
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.zanchenko.alexey.sfgclinic.services.map" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.SfgPetClinicApplicationTests">
-    <configuration name="SfgPetClinicApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.SfgPetClinicApplication" />
-      <module name="pet-clinic-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SfgPetClinicApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SfgPetClinicApplication" />
-      <module name="pet-clinic-data" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.OwnerMapServiceTest">
     <configuration name="SfgPetClinicApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.SfgPetClinicApplication" />
       <module name="pet-clinic-web" />
@@ -132,46 +126,92 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/lesha/Desktop/дыра/guru/sfg-pet-clinic/sfg-pet-clinic" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sfg-pet-clinic" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SfgPetClinicApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-web" />
+    <configuration name="OwnerMapServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-data" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.*" />
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.SfgPetClinicApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.OwnerMapServiceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerMapServiceTest.findByLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.OwnerMapServiceTest" />
+      <option name="METHOD_NAME" value="findByLastName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerMapServiceTest.findByLastNameNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.OwnerMapServiceTest" />
+      <option name="METHOD_NAME" value="findByLastNameNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerMapServiceTest.saveExisintId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.OwnerMapServiceTest" />
+      <option name="METHOD_NAME" value="saveExisintId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerMapServiceTest.saveNoId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.OwnerMapServiceTest" />
+      <option name="METHOD_NAME" value="saveNoId" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SfgPetClinicApplicationTests" />
-        <item itemvalue="Application.SfgPetClinicApplication (1)" />
-        <item itemvalue="Gradle.C:/Users/lesha/Desktop/дыра/guru/sfg-pet-clinic/sfg-pet-clinic" />
-        <item itemvalue="Application.SfgPetClinicApplication" />
+        <item itemvalue="JUnit.OwnerMapServiceTest" />
+        <item itemvalue="JUnit.OwnerMapServiceTest.findByLastNameNotFound" />
+        <item itemvalue="JUnit.OwnerMapServiceTest.findByLastName" />
+        <item itemvalue="JUnit.OwnerMapServiceTest.saveExisintId" />
+        <item itemvalue="JUnit.OwnerMapServiceTest.saveNoId" />
       </list>
     </recent_temporary>
   </component>
