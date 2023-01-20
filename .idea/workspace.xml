@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="added jpa tests for owner service, closes #50">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml" beforeDir="false" />
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="added MockMvc Tests for Owner Controller, closes #52">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659181895740</updated>
-    </task>
-    <task id="LOCAL-00002" summary="refactoring to multimodule maven project. closes #1">
-      <created>1662998539480</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1662998539480</updated>
     </task>
     <task id="LOCAL-00003" summary="some changes for mvn release:prepare">
       <created>1663082537775</created>
@@ -570,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674152919603</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="added MockMvc Tests for Owner Controller, closes #52">
+      <created>1674227396396</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1674227396396</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -586,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added layout to vets page, closes #21" />
     <MESSAGE value="added visits,updated owner with pet relationship , closes #26" />
     <MESSAGE value="added specialities, added to vet, closes #27" />
     <MESSAGE value="added properties, closes #28" />
@@ -611,7 +607,8 @@
     <MESSAGE value="updated profiles for JPA service, tested active profiles, closes #48" />
     <MESSAGE value="Created CRUD tests for OwnerMapService, closes #49" />
     <MESSAGE value="added jpa tests for owner service, closes #50" />
-    <option name="LAST_COMMIT_MESSAGE" value="added jpa tests for owner service, closes #50" />
+    <MESSAGE value="added MockMvc Tests for Owner Controller, closes #52" />
+    <option name="LAST_COMMIT_MESSAGE" value="added MockMvc Tests for Owner Controller, closes #52" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
