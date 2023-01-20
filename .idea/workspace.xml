@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="added MockMvc Tests for Owner Controller, closes #52">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/.circleci/config.yml" afterDir="false" />
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="adding circleci build file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/.circleci/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659181895740</updated>
-    </task>
-    <task id="LOCAL-00003" summary="some changes for mvn release:prepare">
-      <created>1663082537775</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1663082537775</updated>
     </task>
     <task id="LOCAL-00004" summary="change package name for test in pet-clinic-web">
       <created>1663083716524</created>
@@ -567,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674227396396</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="adding circleci build file">
+      <created>1674234169906</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1674234169906</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added visits,updated owner with pet relationship , closes #26" />
     <MESSAGE value="added specialities, added to vet, closes #27" />
     <MESSAGE value="added properties, closes #28" />
     <MESSAGE value="added PetTypeService, closes #29" />
@@ -608,7 +607,8 @@
     <MESSAGE value="Created CRUD tests for OwnerMapService, closes #49" />
     <MESSAGE value="added jpa tests for owner service, closes #50" />
     <MESSAGE value="added MockMvc Tests for Owner Controller, closes #52" />
-    <option name="LAST_COMMIT_MESSAGE" value="added MockMvc Tests for Owner Controller, closes #52" />
+    <MESSAGE value="adding circleci build file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding circleci build file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
