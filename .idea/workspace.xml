@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="Created CRUD tests for OwnerMapService, closes #49">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/test/java/com/zanchenko/alexey/sfgclinic/services/springdatajpa/OwnerSDJpaServiceTest.java" afterDir="false" />
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="added jpa tests for owner service, closes #50">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,11 +111,12 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.zanchenko.alexey.sfgclinic.controllers" />
       <recent name="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
       <recent name="com.zanchenko.alexey.sfgclinic.services.map" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OwnerSDJpaServiceTest">
+  <component name="RunManager" selected="JUnit.OwnerControllerTest">
     <configuration name="SfgPetClinicApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.SfgPetClinicApplication" />
       <module name="pet-clinic-web" />
@@ -123,6 +126,69 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerControllerTest.findOwners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
+      <option name="METHOD_NAME" value="findOwners" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerControllerTest.listOwners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
+      <option name="METHOD_NAME" value="listOwners" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerControllerTest.listOwnersByIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
+      <option name="METHOD_NAME" value="listOwnersByIndex" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,77 +208,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerSDJpaServiceTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.OwnerSDJpaServiceTest" />
-      <option name="METHOD_NAME" value="findAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OwnerSDJpaServiceTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.OwnerSDJpaServiceTest" />
-      <option name="METHOD_NAME" value="findById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OwnerSDJpaServiceTest.findByIdNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.OwnerSDJpaServiceTest" />
-      <option name="METHOD_NAME" value="findByIdNotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OwnerSDJpaServiceTest.findByLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.OwnerSDJpaServiceTest" />
-      <option name="METHOD_NAME" value="findByLastName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OwnerControllerTest" />
+        <item itemvalue="JUnit.OwnerControllerTest.findOwners" />
+        <item itemvalue="JUnit.OwnerControllerTest.listOwnersByIndex" />
+        <item itemvalue="JUnit.OwnerControllerTest.listOwners" />
         <item itemvalue="JUnit.OwnerSDJpaServiceTest" />
-        <item itemvalue="JUnit.OwnerSDJpaServiceTest.findByIdNotFound" />
-        <item itemvalue="JUnit.OwnerSDJpaServiceTest.findById" />
-        <item itemvalue="JUnit.OwnerSDJpaServiceTest.findAll" />
-        <item itemvalue="JUnit.OwnerSDJpaServiceTest.findByLastName" />
       </list>
     </recent_temporary>
   </component>
@@ -224,13 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659181895740</updated>
-    </task>
-    <task id="LOCAL-00001" summary="adding POJOs. Closes #2.">
-      <created>1662985024649</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1662985024649</updated>
     </task>
     <task id="LOCAL-00002" summary="refactoring to multimodule maven project. closes #1">
       <created>1662998539480</created>
@@ -568,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674147570322</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="added jpa tests for owner service, closes #50">
+      <created>1674152919602</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1674152919603</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +586,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added layout, closes #20" />
     <MESSAGE value="added layout to vets page, closes #21" />
     <MESSAGE value="added visits,updated owner with pet relationship , closes #26" />
     <MESSAGE value="added specialities, added to vet, closes #27" />
@@ -609,18 +610,8 @@
     <MESSAGE value="Implemented JPA Visit Service, added loader data, closes #46" />
     <MESSAGE value="updated profiles for JPA service, tested active profiles, closes #48" />
     <MESSAGE value="Created CRUD tests for OwnerMapService, closes #49" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created CRUD tests for OwnerMapService, closes #49" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerController.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added jpa tests for owner service, closes #50" />
+    <option name="LAST_COMMIT_MESSAGE" value="added jpa tests for owner service, closes #50" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
