@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="adding circleci build file">
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="adding circleci build again2">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/owners/createOrUpdateOwnerForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/owners/findOwners.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/owners/ownerDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/owners/ownersList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,17 +34,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="15865786685f0ce96c25242b7b2d93857a9afa9d" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,8 +87,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
   }
@@ -97,6 +107,8 @@
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources\static\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alex\Desktop\trash\java\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources\templates\owners" />
+      <recent name="C:\Users\alex\Desktop\trash\java\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources\templates" />
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\main\resources" />
       <recent name="C:\Users\lesha\Desktop\дыра\guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-webb\src\main\java" />
     </key>
@@ -113,13 +125,13 @@
       <recent name="com.zanchenko.alexey.sfgclinic.services.map" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OwnerControllerTest">
+  <component name="RunManager" selected="Application.SfgPetClinicApplication">
     <configuration name="SfgPetClinicApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.SfgPetClinicApplication" />
       <module name="pet-clinic-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,6 +154,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OwnerControllerTest.displayOwner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
+      <option name="METHOD_NAME" value="displayOwner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OwnerControllerTest.findOwners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
@@ -153,22 +181,6 @@
       <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
       <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
       <option name="METHOD_NAME" value="findOwners" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OwnerControllerTest.listOwners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
-      <option name="METHOD_NAME" value="listOwners" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,53 +202,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerSDJpaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.springdatajpa.OwnerSDJpaServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SfgPetClinicApplication" />
+        <item itemvalue="JUnit.OwnerControllerTest.displayOwner" />
         <item itemvalue="JUnit.OwnerControllerTest" />
         <item itemvalue="JUnit.OwnerControllerTest.findOwners" />
         <item itemvalue="JUnit.OwnerControllerTest.listOwnersByIndex" />
-        <item itemvalue="JUnit.OwnerControllerTest.listOwners" />
-        <item itemvalue="JUnit.OwnerSDJpaServiceTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2b2954ac-b2cf-4a9a-8fb8-9edd65c9c4b4" name="Changes" comment="" />
+      <changelist id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="adding circleci build again2" />
       <created>1659181895740</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659181895740</updated>
-    </task>
-    <task id="LOCAL-00004" summary="change package name for test in pet-clinic-web">
-      <created>1663083716524</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1663083716524</updated>
-    </task>
-    <task id="LOCAL-00005" summary="&lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;">
-      <created>1663084310057</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1663084310057</updated>
     </task>
     <task id="LOCAL-00006" summary="comment &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;">
       <created>1663172193351</created>
@@ -567,7 +550,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674234169906</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="adding circleci build again">
+      <created>1674234987934</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1674234987934</updated>
+    </task>
+    <task id="LOCAL-00054" summary="adding circleci build again2">
+      <created>1674236277392</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1674236277392</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,8 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added specialities, added to vet, closes #27" />
-    <MESSAGE value="added properties, closes #28" />
     <MESSAGE value="added PetTypeService, closes #29" />
     <MESSAGE value="added PetTypes to bootstrap(DataLoader class), closes #32" />
     <MESSAGE value="added Pets and Contact info to owners on startup, closes #33" />
@@ -608,10 +603,33 @@
     <MESSAGE value="added jpa tests for owner service, closes #50" />
     <MESSAGE value="added MockMvc Tests for Owner Controller, closes #52" />
     <MESSAGE value="adding circleci build file" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding circleci build file" />
+    <MESSAGE value="adding circleci build again" />
+    <MESSAGE value="adding circleci build again2" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding circleci build again2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sfg_pet_clinic$SfgPetClinicApplication.ic" NAME="SfgPetClinicApplication Coverage Results" MODIFIED="1674994596875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.zanchenko.alexey.sfgclinic.*</FILTER>
+    </SUITE>
   </component>
 </project>
