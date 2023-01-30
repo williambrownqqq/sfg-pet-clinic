@@ -63,7 +63,14 @@ public class OwnerController {
         }
 
         // find owners by last name
-        List<Owner> results = ownerService.findAllByLastNameLike(owner.getLastName());
+        List<Owner> results = ownerService.findAllByLastNameLike("%" + owner.getLastName() + "%" ); // it's a refresher
+        // underneath the covers that's gonna do SQL search and it's gonna do like a clause
+        //Then the little
+        //% there is a wild-card character in SQL, so that's what we're appending to the
+        //String adding in a couple percent signs, and because up here, if nothing comes in, we set to an empty String and when that comes down.
+        // Затем маленьки
+        //% является символом подстановки в SQL, так что это то, что мы добавляем к
+        //String, добавляя пару знаков процента, и потому что здесь, наверху, если ничего не приходит, мы устанавливаем на пустую Строку и когда она спускается.
 
         if (results.isEmpty()) {
             // no owners found
