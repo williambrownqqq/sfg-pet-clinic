@@ -11,13 +11,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.anyLong;
-import static org.mockito.ArgumentMatchers.isNotNull;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -47,36 +47,36 @@ class OwnerControllerTest {
                 .build(); // set up an environment for Spring Controller to run in. It's all Mock environment. It doesn't actually pull up a server which is really quite nice
     } // we are initializing an owners object which we'll use for the return value the controllers.
 
-    @Test
-    void listOwners() throws Exception {
-        when(ownerService.findAll()).thenReturn(owners);
+//    @Test // no valid already so we deleted
+//    void listOwners() throws Exception {
+//        when(ownerService.findAll()).thenReturn(owners);
+//
+//        mockMvc.perform(get("/owners"))
+//                //.andExpect(status().is(200));
+//                .andExpect(status().isOk()) // expecting a status of ok which is an HTTP status of 200
+//                .andExpect(view().name("owners/index"))
+//                .andExpect(model().attribute("owners", hasSize(2))); // our mock returning bck a Set that has two elements on it.
+//        // so i'm gonna make sure that i have an attribute called owners which has a size of 2 and the view name of owners/index returns
+//    }
 
-        mockMvc.perform(get("/owners"))
-                //.andExpect(status().is(200));
-                .andExpect(status().isOk()) // expecting a status of ok which is an HTTP status of 200
-                .andExpect(view().name("owners/index"))
-                .andExpect(model().attribute("owners", hasSize(2))); // our mock returning bck a Set that has two elements on it.
-        // so i'm gonna make sure that i have an attribute called owners which has a size of 2 and the view name of owners/index returns
-    }
-
-    @Test
-    void listOwnersByIndex() throws Exception {
-        when(ownerService.findAll()).thenReturn(owners);
-
-        mockMvc.perform(get("/owners/index"))
-                //.andExpect(status().is(200));
-                .andExpect(status().isOk())
-                .andExpect(view().name("owners/index"))
-                .andExpect(model().attribute("owners", hasSize(2))); // our mock returning bck a Set that has two elements on it.
-        // so i'm gonna make sure that i have an attribute called owners which has a size of 2 and the view name of owners/index returns
-    }
+//    @Test
+//    void listOwnersByIndex() throws Exception {
+//        when(ownerService.findAll()).thenReturn(owners);
+//
+//        mockMvc.perform(get("/owners/index"))
+//                //.andExpect(status().is(200));
+//                .andExpect(status().isOk())
+//                .andExpect(view().name("owners/index"))
+//                .andExpect(model().attribute("owners", hasSize(2))); // our mock returning bck a Set that has two elements on it.
+//        // so i'm gonna make sure that i have an attribute called owners which has a size of 2 and the view name of owners/index returns
+//    }
 
     @Test
     void findOwners() throws Exception {
 
         mockMvc.perform(get("/owners/find"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("notimplemented"));
+                .andExpect(view().name("owners/findOwners"));
 
         verifyNoInteractions(ownerService);
     }
@@ -92,5 +92,24 @@ class OwnerControllerTest {
                 .andExpect(model().attribute("owner", hasProperty("id", is(1L)))); // our mock returning bck a Set that has two elements on it.
         // so i'm gonna make sure that i have an attribute called owners which has a size of 2 and the view name of owners/index returns
     }
+    @Test
+    void proccessFindFormReturnOne() throws Exception {
+        when(ownerService.findAllByLastNameLike(anyString())).thenReturn(Arrays.asList(Owner.builder().id(1L).build()));
 
-}
+        mockMvc.perform(get("/owners"))
+                .andExpect(status().is3xxRedirection())
+                .andExpect(view().name("redirect:/owners/1"));
+    }
+
+    @Test
+    void proccessFindFormReturnMany() throws Exception {
+        when(ownerService.findAllByLastNameLike(anyString())).thenReturn(Arrays.asList(Owner.builder().id(1L).build(), Owner.builder().id(2L).build()));
+
+        mockMvc.perform(get("/owners"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("owners/ownersList"))
+                .andExpect(model().attribute("selections", hasSize(2)));
+    }
+
+
+    }

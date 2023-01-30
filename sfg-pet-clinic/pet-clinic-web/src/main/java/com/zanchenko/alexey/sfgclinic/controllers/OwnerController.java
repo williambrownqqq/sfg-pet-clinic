@@ -1,13 +1,20 @@
 package com.zanchenko.alexey.sfgclinic.controllers;
 
+import com.zanchenko.alexey.sfgclinic.model.Owner;
 import com.zanchenko.alexey.sfgclinic.services.OwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.naming.Binding;
+import java.util.List;
 
 // just to clarify what i did there is i am prefixig at the class level
 @RequestMapping("/owners") //Because everything in this controller is going to go to Owners, what I can do
@@ -20,23 +27,61 @@ public class OwnerController {
         this.ownerService = ownerService;
     }
 
-    //@RequestMapping({"/owners", "/owners/index", "/owners/index.html"}) // get rid of that
-    @RequestMapping({"", "/", "/index", "/index.html"})
-    public String listOwners(Model model){
-        // we are adding the attribute of owners to that
-        int size = ownerService.findAll().size();
-        model.addAttribute("owners", ownerService.findAll()); // owners - it will be the name of property inside the model
-        // ownerService.findAll() - it is going to give us a set that will be able to iterate over. Сможет повторить
-        return "owners/index";
+    @InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields("id");
     }
 
-    @RequestMapping({"/find"})
-    public String findOwners(){
-        return "notimplemented";
+
+//    @InitBinder // we are sending a disallowed field of ID // Why ID?
+//    //ID is what drives everything in the db // ID in BaseEntity
+//    public void setAllowedFields(WebDataBinder dataBinder){ // we are grabbing this WebDataBinder, so InitBinder is a standard Spring MVC annotation to allow us to have that WebDataBinder inject it into our controller and then we can take control of it.
+//        dataBinder.setAllowedFields("id");
+//    }
+    //@RequestMapping({"/owners", "/owners/index", "/owners/index.html"}) // get rid of that
+
+//    @RequestMapping({"", "/", "/index", "/index.html"}) // no valid already so we deleted
+//    public String listOwners(Model model){
+//        // we are adding the attribute of owners to that
+//        int size = ownerService.findAll().size();
+//        model.addAttribute("owners", ownerService.findAll()); // owners - it will be the name of property inside the model
+//        // ownerService.findAll() - it is going to give us a set that will be able to iterate over. Сможет повторить
+//        return "owners/index";
+//    }
+
+    @RequestMapping("/find")
+    public String findOwners(Model model){
+        model.addAttribute("owner", Owner.builder().build());
+        return "owners/findOwners";
+    }
+
+    @GetMapping
+    public String processFindForm(Owner owner, BindingResult result, Model model){
+        // allow parameterless GET request for /owners to return all records
+        if (owner.getLastName() == null) {
+            owner.setLastName(""); // empty string signifies broadest possible search
+        }
+
+        // find owners by last name
+        List<Owner> results = ownerService.findAllByLastNameLike(owner.getLastName());
+
+        if (results.isEmpty()) {
+            // no owners found
+            result.rejectValue("lastName", "notFound", "not found");
+            return "owners/findOwners";
+        } else if (results.size() == 1) {
+            // 1 owner found
+            owner = results.get(0);
+            return "redirect:/owners/" + owner.getId();
+        } else {
+            // multiple owners found
+            model.addAttribute("selections", results);
+            return "owners/ownersList";
+        }
     }
 
     @GetMapping("/{ownerId}")
-    public ModelAndView showOwner(@PathVariable("ownerId") Long ownerId){
+    public ModelAndView showOwner(@PathVariable("ownerId") Long ownerId) {
         ModelAndView mav = new ModelAndView("owners/ownerDetails");
         mav.addObject(ownerService.findById(ownerId));
         return mav;
