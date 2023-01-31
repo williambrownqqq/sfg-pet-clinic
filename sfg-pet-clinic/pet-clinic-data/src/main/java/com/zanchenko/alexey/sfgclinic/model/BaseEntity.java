@@ -26,6 +26,10 @@ public class BaseEntity implements Serializable {
     //going to insert it in the database is going to provide us the identity value.
     // Теперь ИДЕНТИЧНОСТЬ, которую мы выбрали, говорит, что мы собирается вставить его в базу данных, чтобы предоставить нам значение идентификатора.
     private Long id;
+
+    public boolean isNew(){
+        return this.id == null;
+    }
 }
 
 

@@ -3,23 +3,24 @@ package com.zanchenko.alexey.sfgclinic.controllers;
 import com.zanchenko.alexey.sfgclinic.model.Owner;
 import com.zanchenko.alexey.sfgclinic.services.OwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.naming.Binding;
+import javax.validation.Valid;
 import java.util.List;
 
 // just to clarify what i did there is i am prefixig at the class level
 @RequestMapping("/owners") //Because everything in this controller is going to go to Owners, what I can do
 @Controller
 public class OwnerController {
+
+    private static final String VIEWS_OWNER_CREATE_OR_UPDTE_FROM = "owners/createOrUpdateOwnerForm";
 
     private final OwnerService ownerService;
 
@@ -31,7 +32,6 @@ public class OwnerController {
     public void setAllowedFields(WebDataBinder dataBinder) {
         dataBinder.setDisallowedFields("id");
     }
-
 
 //    @InitBinder // we are sending a disallowed field of ID // Why ID?
 //    //ID is what drives everything in the db // ID in BaseEntity
@@ -88,9 +88,48 @@ public class OwnerController {
     }
 
     @GetMapping("/{ownerId}")
-    public ModelAndView showOwner(@PathVariable("ownerId") Long ownerId) {
+    public ModelAndView showOwner(@PathVariable Long ownerId) {
         ModelAndView mav = new ModelAndView("owners/ownerDetails");
         mav.addObject(ownerService.findById(ownerId));
         return mav;
+    }
+
+    @GetMapping("/new")
+    public String initCreationForm(Model model){
+        model.addAttribute("owner", Owner.builder().build());
+        return VIEWS_OWNER_CREATE_OR_UPDTE_FROM;
+    }
+
+    @PostMapping("/new")
+    public String processCreationForm(@Valid Owner owner, BindingResult result){
+        if(result.hasErrors()){
+            return VIEWS_OWNER_CREATE_OR_UPDTE_FROM;
+        }
+        else {
+            Owner savedOwner = ownerService.save(owner);
+            return "redirect:/owners/" + savedOwner.getId();
+        }
+    }
+
+    @GetMapping("/{ownerId}/edit")
+    public String initUpdateOwnerForm(@PathVariable Long ownerId, Model model) {
+        model.addAttribute(ownerService.findById(ownerId));
+        return VIEWS_OWNER_CREATE_OR_UPDTE_FROM;
+    }
+
+    @PostMapping("/{ownerId}/edit")
+    public String processUpdateOwnerForm(@Valid Owner owner, BindingResult result,@PathVariable Long ownerId, Model model){
+        if (result.hasErrors()) {
+            return VIEWS_OWNER_CREATE_OR_UPDTE_FROM;
+        } else {
+            owner.setId(ownerId);
+            Owner savedOwner = ownerService.save(owner);
+            return "redirect:/owners/" + savedOwner.getId();
+        }
+        // What's happening here is we're going to come in, we get the ownerId bind. //Что здесь происходит: мы заходим, получаем привязку ownerId.
+        //Remember we have our init binder which is preventing the Model from getting the //Помните, что у нас есть связка init, которая не позволяет модели получить значение
+        //ID. So there are paths or with the form variables will all make the get //ID. Так что есть пути или с переменными формы все сделают get
+        //bound to owner except for ID so that's why we need to // связанными с владельцем, за исключением ID, поэтому нам нужно
+        //explicitly set it which is coming out of the path. // явно установить его, который выходит из пути.
     }
 }
