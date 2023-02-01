@@ -11,13 +11,22 @@ import java.util.Set;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+//@Builder move it to constructor
 // Pet, this is going to be another one of our entities.
 @Entity
 @Table(name = "pets")
 public class Pet extends BaseEntity{
     @Column(name = "name")
     private String name;
+    @Builder
+    public Pet(Long id, String name, PetType petType, Owner owner, LocalDate birthDate, Set<Visit> visits) {
+        super(id);
+        this.name = name;
+        this.petType = petType;
+        this.owner = owner;
+        this.birthDate = birthDate;
+        this.visits = visits;
+    }
 
     @ManyToOne
     @JoinColumn(name = "type_id")

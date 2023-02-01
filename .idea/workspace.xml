@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="adding ability to add or update an owner. close #55">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/PetController.java" afterDir="false" />
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="adding forms from PetClinic. #56">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/PetControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Owner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/PetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/pets/createOrUpdatePetForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/pets/createOrUpdatePetForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +31,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -128,6 +132,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in pet-clinic-web" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-web" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OwnerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
@@ -143,7 +155,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerControllerTest.initUpdateOwnerForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PetControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
         <pattern>
@@ -152,14 +164,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
-      <option name="METHOD_NAME" value="initUpdateOwnerForm" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.PetControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerControllerTest.processCreationForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PetControllerTest.initUpdateForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
         <pattern>
@@ -168,24 +179,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
-      <option name="METHOD_NAME" value="processCreationForm" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OwnerControllerTest.processUpdateOwnerForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
-      <option name="METHOD_NAME" value="processUpdateOwnerForm" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.PetControllerTest" />
+      <option name="METHOD_NAME" value="initUpdateForm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,10 +189,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.SfgPetClinicApplication" />
+        <item itemvalue="JUnit.All in pet-clinic-web" />
+        <item itemvalue="JUnit.PetControllerTest" />
+        <item itemvalue="JUnit.PetControllerTest.initUpdateForm" />
         <item itemvalue="JUnit.OwnerControllerTest" />
-        <item itemvalue="JUnit.OwnerControllerTest.initUpdateOwnerForm" />
-        <item itemvalue="JUnit.OwnerControllerTest.processCreationForm" />
-        <item itemvalue="JUnit.OwnerControllerTest.processUpdateOwnerForm" />
       </list>
     </recent_temporary>
   </component>
@@ -209,27 +204,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659181895740</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Implement Interfaces for services. Closes #5.">
-      <created>1663195184530</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1663195184530</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Adding BaseEntity. Closes #10.">
-      <created>1663252251829</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1663252251829</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Refactoring to common crud interface. Closes #11.">
-      <created>1663855441437</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1663855441437</updated>
     </task>
     <task id="LOCAL-00012" summary="Impl Map based Services. Closes #6.">
       <created>1663858272397</created>
@@ -553,7 +527,28 @@
       <option name="project" value="LOCAL" />
       <updated>1675178816106</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Adding model attributes for Pet Controller. close #56">
+      <created>1675182460118</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1675182460118</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Adding builder pattern to PetType. close #56">
+      <created>1675183801566</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1675183801566</updated>
+    </task>
+    <task id="LOCAL-00060" summary="adding forms from PetClinic. #56">
+      <created>1675184014440</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1675184014440</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -569,9 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added Pets and Contact info to owners on startup, closes #33" />
-    <MESSAGE value="Added Specialties Map Impl, closes #31" />
-    <MESSAGE value="Adding Specialties to vets on startup, closes #34" />
     <MESSAGE value="Fixed Broken Links, closes #45" />
     <MESSAGE value="Udated base entity with JPA annotations, we add @MappedSuperclass to BaseEntity, closes #35&#10;If we run Spring Boot, I expect&#10;to a toss an exception. We do need to complete the mapping for the other&#10;classes in our model. In the JPA, we have a number of annotations to do." />
     <MESSAGE value="Updated owner woth JPA entity mappings. We mapped out the JPA entities: Pet, Owner, PetType, closes #36" />
@@ -594,7 +586,10 @@
     <MESSAGE value=" implement find owner close #54" />
     <MESSAGE value="fixed find by like. close #63" />
     <MESSAGE value="adding ability to add or update an owner. close #55" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding ability to add or update an owner. close #55" />
+    <MESSAGE value="Adding model attributes for Pet Controller. close #56" />
+    <MESSAGE value="Adding builder pattern to PetType. close #56" />
+    <MESSAGE value="adding forms from PetClinic. #56" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding forms from PetClinic. #56" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
