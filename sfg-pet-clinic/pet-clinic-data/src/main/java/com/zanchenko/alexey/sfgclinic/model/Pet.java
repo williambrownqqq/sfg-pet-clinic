@@ -25,7 +25,10 @@ public class Pet extends BaseEntity{
         this.petType = petType;
         this.owner = owner;
         this.birthDate = birthDate;
-        this.visits = visits;
+        if(visits == null || visits.size() > 0) { // so I'm saying there's on our Builder pattern so if you don't set that explicitly our initialization
+            this.visits = visits; //  gets wiped out so we won't have an empty HashSet. // поэтому я говорю, что в нашем шаблоне Builder, если вы не зададите это явно, наша инициализация
+            //  будет стерта, так что у нас не будет пустого HashSet.
+        }
     }
 
     @ManyToOne

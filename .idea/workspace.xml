@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="adding ability to dd and update A Pet #56">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/formatters/PetTypeFormatter.java" afterDir="false" />
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="Fixed Parse issue on PetType. closes #65">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VisitController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/PetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/pets/createOrUpdateVisitForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/pets/createOrUpdateVisitForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659181895740</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Adding Pet Clinic Index Page and Controller. Closes #8.">
-      <created>1663931034664</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1663931034664</updated>
     </task>
     <task id="LOCAL-00014" summary="Adding Vets Page and Controller. Closes #7.">
       <created>1663932585312</created>
@@ -545,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675273533874</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Fixed Parse issue on PetType. closes #65">
+      <created>1675275835888</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1675275835889</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -561,7 +563,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Udated base entity with JPA annotations, we add @MappedSuperclass to BaseEntity, closes #35&#10;If we run Spring Boot, I expect&#10;to a toss an exception. We do need to complete the mapping for the other&#10;classes in our model. In the JPA, we have a number of annotations to do." />
     <MESSAGE value="Updated owner woth JPA entity mappings. We mapped out the JPA entities: Pet, Owner, PetType, closes #36" />
     <MESSAGE value="Updated vet to use JPA, closes #37" />
     <MESSAGE value="Added Visit Entity, closes #38" />
@@ -586,7 +587,8 @@
     <MESSAGE value="Adding builder pattern to PetType. close #56" />
     <MESSAGE value="adding forms from PetClinic. #56" />
     <MESSAGE value="adding ability to dd and update A Pet #56" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding ability to dd and update A Pet #56" />
+    <MESSAGE value="Fixed Parse issue on PetType. closes #65" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Parse issue on PetType. closes #65" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

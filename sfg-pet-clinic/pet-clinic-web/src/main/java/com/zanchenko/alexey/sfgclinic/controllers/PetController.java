@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.Collection;
+// I'm going to do verify, what is going to do is do a full build run all the tests.
 
 @RequestMapping("/owners/{ownerId}")
 @Controller
