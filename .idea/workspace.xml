@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="CRUD tests PetMapService">
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="added lists view for vets. closes # 68">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/vets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/vets/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VetController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659181895740</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Adding Spring Config. Closes #22.">
-      <created>1664555069373</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1664555069373</updated>
     </task>
     <task id="LOCAL-00018" summary="Added Owners List and updated controller. Closes #16.">
       <created>1664558982439</created>
@@ -547,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675940297695</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="added lists view for vets. closes # 68">
+      <created>1675940983225</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1675940983225</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -563,7 +563,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added spring data jpa service for owners, closes #40" />
     <MESSAGE value="added spring data jpa service for vets, closes #41" />
     <MESSAGE value="added petType SD JPA Service, closes #42" />
     <MESSAGE value="added Pet SD JPA Service, closes #33" />
@@ -588,7 +587,8 @@
     <MESSAGE value="upgraded to Java 11" />
     <MESSAGE value="writed test for empty find owner last name by to return all. closes#64" />
     <MESSAGE value="CRUD tests PetMapService" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD tests PetMapService" />
+    <MESSAGE value="added lists view for vets. closes # 68" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lists view for vets. closes # 68" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
