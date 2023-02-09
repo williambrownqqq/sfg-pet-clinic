@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="upgraded to Java 11">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/exceptions/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="writed test for empty find owner last name by to return all. closes#64">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/test/java/com/zanchenko/alexey/sfgclinic/services/map/PetMapServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/VisitControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VisitController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +112,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zanchenko.alexey.sfgclinic.controllers" />
       <recent name="com.zanchenko.alexey.sfgclinic" />
       <recent name="" />
     </key>
@@ -121,7 +122,7 @@
       <recent name="com.zanchenko.alexey.sfgclinic.services.map" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in pet-clinic-web">
+  <component name="RunManager" selected="JUnit.PetMapServiceTest">
     <configuration name="SfgPetClinicApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.SfgPetClinicApplication" />
       <module name="pet-clinic-web" />
@@ -143,21 +144,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PetControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
@@ -173,7 +159,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetControllerTest.initUpdateForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PetMapServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zanchenko.alexey.sfgclinic.services.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.services.map" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.services.map.PetMapServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VisitControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
         <pattern>
@@ -182,20 +183,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zanchenko.alexey.sfgclinic.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.PetControllerTest" />
-      <option name="METHOD_NAME" value="initUpdateForm" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.controllers.VisitControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PetMapServiceTest" />
+        <item itemvalue="JUnit.VisitControllerTest" />
         <item itemvalue="JUnit.All in pet-clinic-web" />
         <item itemvalue="Application.SfgPetClinicApplication" />
         <item itemvalue="JUnit.PetControllerTest" />
-        <item itemvalue="JUnit.PetControllerTest.initUpdateForm" />
-        <item itemvalue="JUnit.OwnerControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -207,13 +207,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659181895740</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Adding Owners Page and Controller. Closes #13.">
-      <created>1663933309327</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1663933309327</updated>
     </task>
     <task id="LOCAL-00016" summary="Adding Bootstrap for data. Closes #14.">
       <created>1664549693817</created>
@@ -551,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675339291061</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="writed test for empty find owner last name by to return all. closes#64">
+      <created>1675934604904</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1675934604905</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -567,7 +567,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added Visit Entity, closes #38" />
     <MESSAGE value="Implemented repositories, closes #39" />
     <MESSAGE value="added spring data jpa service for owners, closes #40" />
     <MESSAGE value="added spring data jpa service for vets, closes #41" />
@@ -592,14 +591,15 @@
     <MESSAGE value="Fixed Parse issue on PetType. closes #65" />
     <MESSAGE value="Added Visit Controller and mappings. closes #57" />
     <MESSAGE value="upgraded to Java 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgraded to Java 11" />
+    <MESSAGE value="writed test for empty find owner last name by to return all. closes#64" />
+    <option name="LAST_COMMIT_MESSAGE" value="writed test for empty find owner last name by to return all. closes#64" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java</url>
-          <line>148</line>
+          <line>161</line>
           <properties class="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" method="processUpdateOwnerForm">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

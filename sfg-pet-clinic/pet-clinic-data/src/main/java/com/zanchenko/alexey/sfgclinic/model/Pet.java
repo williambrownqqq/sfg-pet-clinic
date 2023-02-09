@@ -1,6 +1,7 @@
 package com.zanchenko.alexey.sfgclinic.model;
 
 import lombok.*;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -40,6 +41,7 @@ public class Pet extends BaseEntity{
     private Owner owner; // this relates back to Owner mapping (set)
 
     @Column(name = "birth_date")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthDate;
     // Of course a pet can go visit the vet multiple times, so each visit will become
     //an individual attribute of a pet.
