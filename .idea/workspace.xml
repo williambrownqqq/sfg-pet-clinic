@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="writed test for empty find owner last name by to return all. closes#64">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/test/java/com/zanchenko/alexey/sfgclinic/services/map/PetMapServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/VisitControllerTest.java" afterDir="false" />
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="CRUD tests PetMapService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VisitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/vets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/vets/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +118,7 @@
       <recent name="com.zanchenko.alexey.sfgclinic.services.map" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PetMapServiceTest">
+  <component name="RunManager" selected="Application.SfgPetClinicApplication">
     <configuration name="SfgPetClinicApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.SfgPetClinicApplication" />
       <module name="pet-clinic-web" />
@@ -191,10 +187,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SfgPetClinicApplication" />
         <item itemvalue="JUnit.PetMapServiceTest" />
         <item itemvalue="JUnit.VisitControllerTest" />
         <item itemvalue="JUnit.All in pet-clinic-web" />
-        <item itemvalue="Application.SfgPetClinicApplication" />
         <item itemvalue="JUnit.PetControllerTest" />
       </list>
     </recent_temporary>
@@ -207,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659181895740</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Adding Bootstrap for data. Closes #14.">
-      <created>1664549693817</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1664549693817</updated>
     </task>
     <task id="LOCAL-00017" summary="Adding Spring Config. Closes #22.">
       <created>1664555069373</created>
@@ -551,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675934604905</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="CRUD tests PetMapService">
+      <created>1675940297695</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1675940297695</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -567,7 +563,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Implemented repositories, closes #39" />
     <MESSAGE value="added spring data jpa service for owners, closes #40" />
     <MESSAGE value="added spring data jpa service for vets, closes #41" />
     <MESSAGE value="added petType SD JPA Service, closes #42" />
@@ -592,7 +587,8 @@
     <MESSAGE value="Added Visit Controller and mappings. closes #57" />
     <MESSAGE value="upgraded to Java 11" />
     <MESSAGE value="writed test for empty find owner last name by to return all. closes#64" />
-    <option name="LAST_COMMIT_MESSAGE" value="writed test for empty find owner last name by to return all. closes#64" />
+    <MESSAGE value="CRUD tests PetMapService" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD tests PetMapService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
