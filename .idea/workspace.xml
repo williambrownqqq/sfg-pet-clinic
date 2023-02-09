@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="Fixed Parse issue on PetType. closes #65">
-      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/VisitController.java" afterDir="false" />
+    <list default="true" id="bf087fa3-afbb-41d4-b56b-5c9e908a18df" name="Changes" comment="upgraded to Java 11">
+      <change afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/exceptions/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/src/main/java/com/zanchenko/alexey/sfgclinic/model/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/java/com/zanchenko/alexey/sfgclinic/controllers/PetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/pets/createOrUpdateVisitForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/main/resources/templates/pets/createOrUpdateVisitForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-data/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfg-pet-clinic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sfg-pet-clinic/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -117,7 +121,7 @@
       <recent name="com.zanchenko.alexey.sfgclinic.services.map" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SfgPetClinicApplication">
+  <component name="RunManager" selected="JUnit.All in pet-clinic-web">
     <configuration name="SfgPetClinicApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zanchenko.alexey.sfgclinic.SfgPetClinicApplication" />
       <module name="pet-clinic-web" />
@@ -187,8 +191,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SfgPetClinicApplication" />
         <item itemvalue="JUnit.All in pet-clinic-web" />
+        <item itemvalue="Application.SfgPetClinicApplication" />
         <item itemvalue="JUnit.PetControllerTest" />
         <item itemvalue="JUnit.PetControllerTest.initUpdateForm" />
         <item itemvalue="JUnit.OwnerControllerTest" />
@@ -203,13 +207,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659181895740</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Adding Vets Page and Controller. Closes #7.">
-      <created>1663932585312</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1663932585312</updated>
     </task>
     <task id="LOCAL-00015" summary="Adding Owners Page and Controller. Closes #13.">
       <created>1663933309327</created>
@@ -547,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675275835889</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Added Visit Controller and mappings. closes #57">
+      <created>1675339291061</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1675339291061</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -563,8 +567,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated owner woth JPA entity mappings. We mapped out the JPA entities: Pet, Owner, PetType, closes #36" />
-    <MESSAGE value="Updated vet to use JPA, closes #37" />
     <MESSAGE value="Added Visit Entity, closes #38" />
     <MESSAGE value="Implemented repositories, closes #39" />
     <MESSAGE value="added spring data jpa service for owners, closes #40" />
@@ -588,15 +590,17 @@
     <MESSAGE value="adding forms from PetClinic. #56" />
     <MESSAGE value="adding ability to dd and update A Pet #56" />
     <MESSAGE value="Fixed Parse issue on PetType. closes #65" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Parse issue on PetType. closes #65" />
+    <MESSAGE value="Added Visit Controller and mappings. closes #57" />
+    <MESSAGE value="upgraded to Java 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgraded to Java 11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/sfg-pet-clinic/pet-clinic-web/src/test/java/com/zanchenko/alexey/sfgclinic/controllers/OwnerControllerTest.java</url>
-          <line>146</line>
-          <properties class="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" method="processtUpdateOwnerForm">
+          <line>148</line>
+          <properties class="com.zanchenko.alexey.sfgclinic.controllers.OwnerControllerTest" method="processUpdateOwnerForm">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
